@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui';
 
-type ProjectCardProps =
+type ProjectCardCustomProps =
 {
 	bg      : string;
 	children: React.ReactNode;
@@ -9,7 +9,7 @@ type ProjectCardProps =
 	title   : string;
 };
 
-const ProjectCard = ( { link, title, children, bg }: ProjectCardProps ) =>
+const ProjectCardCustom = ( { link, title, children, bg }: ProjectCardCustomProps ) =>
 (
 	<a
 		href={ link }
@@ -48,7 +48,7 @@ const ProjectCard = ( { link, title, children, bg }: ProjectCardProps ) =>
 				}
 			}
 		>
-			{ title }
+			{ title + ' 2' }
 		</div>
 		<div
 			sx={
@@ -63,4 +63,4 @@ const ProjectCard = ( { link, title, children, bg }: ProjectCardProps ) =>
 	</a>
 );
 
-export default ProjectCard;
+export default ProjectCardCustom;
