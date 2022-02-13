@@ -14,7 +14,7 @@
     "start": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "deploy": "git pull main && npm i && npm run build"
+    "deploy": "git pull && npm i && npm run build"
   },
   "dependencies": {
     "@lekoarts/gatsby-theme-cara": "^3.0.0",
